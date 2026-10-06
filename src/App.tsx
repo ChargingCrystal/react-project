@@ -1,4 +1,5 @@
 import { useState } from "react";
+import confetti from "canvas-confetti";
 import {
   Button,
   Card,
@@ -16,9 +17,23 @@ export default function App() {
       title="Simple React Framework"
       subtitle="Kleine Demo-App auf Basis unseres eigenen Frameworks."
       actions={
-        <Button variant="secondary" onClick={toggleTheme}>
-          Theme: {theme}
-        </Button>
+        <div style={{ display: "flex", gap: "10px" }}>
+          <Button variant="secondary" onClick={toggleTheme}>
+            Theme: {theme}
+          </Button>
+
+          <Button
+            onClick={() =>
+              confetti({
+                particleCount: 150,
+                spread: 80,
+                origin: { y: 0.6 },
+              })
+            }
+          >
+            Konfetti
+          </Button>
+        </div>
       }
     >
       <div className="demo-grid">
