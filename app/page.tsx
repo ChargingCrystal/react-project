@@ -1,6 +1,8 @@
+"use client";
+
 import confetti from "canvas-confetti";
 
-export default function App() {
+export default function Home() {
   function handleConfetti() {
     confetti({
       particleCount: 150,

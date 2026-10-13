@@ -1,6 +1,6 @@
-# React Hello World mit Konfetti
+# Next.js Hello World mit Konfetti
 
-Ein minimales React-/Vite-Projekt mit einem einzigen Button.
+Minimale Übungsanwendung mit Next.js, React und `canvas-confetti`.
 
 ## Start
 
@@ -9,6 +9,11 @@ npm install
 npm run dev
 ```
 
-## Funktion
+Danach `http://localhost:3000` öffnen.
 
-Der Button ruft `canvas-confetti` auf und erzeugt beim Klick Konfetti.
+## Inhalt
+
+- Next.js mit App Router
+- eine Seite
+- ein Button
+- Konfetti beim Button-Klick
